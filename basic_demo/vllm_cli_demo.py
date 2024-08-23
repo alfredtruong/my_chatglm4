@@ -9,6 +9,13 @@ Usage:
 Note: The script includes a modification to handle markdown to plain text conversion,
 ensuring that the CLI interface displays formatted text correctly.
 """
+##########################################
+# send to particular gpu
+##########################################
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+##########################################
+
 import time
 import asyncio
 from transformers import AutoTokenizer
