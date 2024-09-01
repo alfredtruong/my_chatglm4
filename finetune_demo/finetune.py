@@ -32,7 +32,7 @@ from typing import Optional
 # send to particular gpu
 ##########################################
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+#os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 ##########################################
 
 app = typer.Typer(pretty_exceptions_show_locals=False)

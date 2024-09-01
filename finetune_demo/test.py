@@ -68,6 +68,19 @@ def convert_ds(ds,
 convert_ds(ds,'train','train.jsonl')
 convert_ds(ds,'validation','dev.jsonl')
 
+##########################################
+# apply model
+##########################################
+'''
+python inference.py finetune_demo/output/checkpoint-1500
+THUDM/GLM-4
+python inference.py THUDM/glm-4-9b-chat
+
+
+CUDA_VISIBLE_DEVICES=0 python inference.py output/checkpoint-1500/ --prompt "你是谁？"
+
+'''
+
 #%%
 ##########################################
 # force compute onto particular gpu
